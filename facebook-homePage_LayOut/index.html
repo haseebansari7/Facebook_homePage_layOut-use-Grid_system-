@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- fontAwesom -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <title>Facebook Home page</title>
+</head>
+
+<body>
+    <div class="containerBox">
+        <div class="wraper">
+
+            <!-- ===============******** START NAVIGATION ********=============  -->
+            <!-- <div class="navContainer"> -->
+
+            <nav id="navigation">
+                <div id="logo">
+                    <!-- <span class="logo">HA</span> -->
+                </div>
+
+                <!-- =========== Start Search ==========  -->
+                <div id="searchBar">
+                    <i class="fal fa-search" onclick="searchBarBtn()"></i><input type="search" placeholder="Search">
+                </div>
+                <!-- =========== End Search ==========  -->
+
+
+                <!-- =========== Start left hand side Navigation button ==========  -->
+                <div id="navLeftBtn">
+                    <button class="navBtn1"><i class="fas fa-home-lg-alt"></i></button>
+                    <button class="navBtn2"><i class="fal fa-caret-square-right"></i></button>
+                    <button class="navBtn3"><i class="fas fa-hotel"></i></button>
+                    <button class="navBtn4"><i class="fas fa-users"></i></button>
+                    <button class="navBtn5"><i class="fas fa-game-board"></i></button>
+                </div>
+                <!-- =========== End left hand side Navigation button ==========  -->
+
+
+                <!-- =========== Start right hand side Navigation button ==========  -->
+                <div id="navRightBtn">
+
+                    <!--========== Start navigation Display Button ===============-->
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkBtn">
+                        <i class="fas fa-bars" onclick="navBtn()"></i>
+                    </label>
+                    <!--========== End navigation Display Button ===============-->
+
+                    <button class="navBtn6">+</i></button>
+                    <button class="navBtn7"><i class="fab fa-facebook-messenger"></i></button>
+                    <button class="navBtn8"><i class="fas fa-bell"></i></button>
+                    <button class="navBtn9">
+                        <select id="navRightSelectBox">
+                            <option value="seeProfile" id="seeProfile"><i class="fas fa-caret-down"></i></option>
+                            <option value="profile" id="profile">See your profile</option>
+                            <option value="feedback" id="feedback">Give feedback</option>
+                            <option value="setting" id="setting">Setting & privacy</option>
+                            <option value="support" id="support">help & support</option>
+                            <option value="dispaly" id="display">Display & Accessibility</option>
+                            <option value="logOut" id="logOut">Log Out</option>
+                        </select>
+                    </button>
+                </div>
+                <!-- =========== End right hand side Navigation button ==========  -->
+
+            </nav>
+            <!-- </div> -->
+            <!-- ===============******** End Navigation********=============  -->
+
+
+            <!-- ===============******** START MENU ********===============  -->
+            <menu id="menu">
+                <button class="menuBtn1"><i class="fas fa-user-friends"></i> friends</button>
+                <button class="menuBtn2"><i class="fas fa-users"></i>groups</button>
+                <button class="menuBtn3"><i class="fas fa-file"></i>pages</button>
+                <button class="menuBtn4"><i class="fad fa-archive"></i>event</button>
+                <button class="menuBtn5"><i class="fad fa-bags-shopping"></i>jobs</button>
+                <button class="menuBtn6"><i class="fas fa-calendar-star"></i>most recent</button>
+                <button class="menuBtn7"><i class="fas fa-user-friends"></i>friends</button>
+                <button class="menuBtn8"><i class="fas fa-users"></i>groups</button>
+                <button class="menuBtn9"><i class="fas fa-file"></i>pages</button>
+                <button class="menuBtn10"><i class="fad fa-archive"></i>event</button>
+                <button class="menuBtn11"><i class="fad fa-bags-shopping"></i>jobs</button>
+                <button class="menuBtn12"><i class="fas fa-calendar-star"></i>most recent</button>
+                <button class="menuBtn13"><i class="fas fa-user-friends"></i>friends</button>
+                <button class="menuBtn14"><i class="fas fa-users"></i>groups</button>
+                <button class="menuBtn15"><i class="fas fa-file"></i>pages</button>
+                <button class="menuBtn16"><i class="fad fa-archive"></i>event</button>
+                <button class="menuBtn17"><i class="fad fa-bags-shopping"></i>jobs</button>
+                <button class="menuBtn18"><i class="fas fa-calendar-star"></i>most recent</button>
+                <button class="menuBtn19"><i class="fas fa-user-friends"></i>friends</button>
+                <button class="menuBtn20"><i class="fas fa-users"></i>groups</button>
+                <button class="menuBtn21"><i class="fas fa-file"></i>pages</button>
+                <button class="menuBtn22"><i class="fad fa-archive"></i>event</button>
+                <button class="menuBtn23"><i class="fad fa-bags-shopping"></i>jobs</button>
+                <button class="menuBtn24"><i class="fas fa-calendar-star"></i>most recent</button>
+            </menu>
+            <!-- ==============********* END MENU *********============  -->
+
+
+            <!-- ==============********* START SECTION *********=============  -->
+            <!-- =========== Start Story Section ==========  -->
+            <section id="section">
+                <div class="storySection">
+                    <div class="storySectionImage1">
+                        <img src="simpleBGimage.jpeg" alt="_">
+                    </div>
+                    <div class="storySectionImage2">
+                        <img src="htmlimage.png" alt="_">
+                    </div>
+                    <div class="storySectionImage3">
+                        <img src="cssimage.png" alt="_">
+                    </div>
+                    <div class="storySectionImage4">
+                        <img src="jsimage.png" alt="_">
+                    </div>
+                    <div class="storySectionImage5">
+                        <img src="reactjsImage.png" alt="_">
+                    </div>
+                </div>
+                <!-- =========== End Story section ==========  -->
+
+                <!-- =========== Start main Card section ==========  -->
+                <div id="card">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="sky.jfif" class="dpimage" alt="">
+                            <span class="card-title">Nithil Jonson</span>
+                            <span class="card-text">12 h</span>
+                            <span class="card-text">.<i class="fas fa-user-friends"></i> </span><br>
+                            <span class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                <br>industry. Lorem Ipsum has been the industry's</i> </span>
+                        </div>
+                        <img src="simpleBGimage.jpeg" class="card-img-top" alt="...">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">💗👍
+                                <span class="likeSpan">Black Wood and 1.15K other</span>
+                                <span class="comtAndShreSpan">500 comment 10K Shares</span>
+                            </li>
+                        </ul>
+                        <div class="card-body">
+                            <button class="card-link">👍🏻Like</button>
+                            <button class="card-link">💬Comment</button>
+                            <button class="card-link">🏹Share</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- =========== End main Card section ==========  -->
+            </section>
+            <!-- ===============********* End Section *********==============  -->
+
+
+            <!-- ===============********* START ASIDEBAR *********==============  -->
+            <aside id="asideBar">
+                <!-- =========== Start Sponsoredbar ==========  -->
+                <div id="sponsoredBarHeading">
+                    <h5>Sponsored</h5>
+                </div>
+                <div id="sponsoredBar">
+                    <div class="sponsoredBarImge1">
+                        <img src="sponcerdimage1.jfif" alt="">
+                        <span class="sponsName1">New Tech</span>
+                        <span class="sponsWeb1">newtech.org</span>
+                    </div>
+                    <div class="sponsoredBarImge2">
+                        <img src="sponcerdimage2.jfif" alt="">
+                        <span class="sponsName2">Lanc Show</span>
+                        <span class="sponsWeb2">lancsh.org</span>
+                    </div>
+                </div>
+                <hr>
+                <!-- =========== End Sposoredbar ==========  -->
+
+                <!-- =========== Start onlinefriend ==========  -->
+                <div id="onLineFriends">
+                    <div class="onlineFrnd1">
+                        <img src="simpleBGimage.jpeg" alt=""><span>.</span><a href="">friends name</a>
+                    </div>
+                    <div class="onlineFrnd2">
+                        <img src="simpleBGimage.jpeg" alt=""><span>.</span><a href="">friends name</a>
+                    </div>
+                    <div class="onlineFrnd3">
+                        <img src="simpleBGimage.jpeg" alt=""><span>.</span><a href="">friends name</a>
+                    </div>
+                    <div class="onlineFrnd4">
+                        <img src="simpleBGimage.jpeg" alt=""><span>.</span><a href="">friends name</a>
+                    </div>
+                    <div class="onlineFrnd5">
+                        <img src="simpleBGimage.jpeg" alt=""><span>.</span><a href="">friends name</a>
+                    </div>
+                    <div class="onlineFrnd6">
+                        <img src="simpleBGimage.jpeg" alt=""><span>.</span><a href="">friends name</a>
+                    </div>
+                    <div class="onlineFrnd7">
+                        <img src="simpleBGimage.jpeg" alt=""><span>.</span><a href="">friends name</a>
+                    </div>
+                    <div class="onlineFrnd8">
+                        <img src="simpleBGimage.jpeg" alt=""><span>.</span><a href="">friends name</a>
+                    </div>
+                    <div class="onlineFrnd9">
+                        <img src="simpleBGimage.jpeg" alt=""><a href="">friends name</a>
+                    </div>
+                    <!-- <div class="onlineFrnd10">
+                        <img src="simpleBGimage.jpeg" alt=""><a href="">friends name</a>
+                    </div>
+                    <div class="onlineFrnd11">
+                        <img src="simpleBGimage.jpeg" alt=""><a href="">friends name</a>
+                    </div>
+                    <div class="onlineFrnd12">
+                        <img src="simpleBGimage.jpeg" alt=""><a href="">friends name</a>
+                    </div>
+                    <div class="onlineFrnd13">
+                        <img src="simpleBGimage.jpeg" alt=""><a href="">friends name</a>
+                    </div>
+                    <div class="onlineFrnd14">
+                        <img src="simpleBGimage.jpeg" alt=""><a href="">friends name</a>
+                    </div>
+                    <div class="onlineFrnd15">
+                        <img src="simpleBGimage.jpeg" alt=""><a href="">friends name</a>
+                    </div>
+                    <div class="onlineFrnd16">
+                        <img src="simpleBGimage.jpeg" alt=""><a href="">friends name</a>
+                    </div>
+                    <div class="onlineFrnd17">
+                        <img src="simpleBGimage.jpeg" alt=""><a href="">friends name</a>
+                    </div>
+                    <div class="onlineFrnd18">
+                        <img src="simpleBGimage.jpeg" alt=""><a href="">friends name</a>
+                    </div>
+                    <div class="onlineFrnd19">
+                        <img src="simpleBGimage.jpeg" alt=""><a href="">friends name</a>
+                    </div>
+                    <div class="onlineFrnd20">
+                        <img src="simpleBGimage.jpeg" alt=""><a href="">friends name</a>
+                    </div> -->
+                </div>
+                <!-- =========== End onlinefriend ==========  -->
+            </aside>
+            <!-- ===============********* START ASIDEBAR *********==============  -->
+
+        </div><!-- wrapper End -->
+    </div> <!-- Container End -->
+
+    <!-- BootStarp Javascript file -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

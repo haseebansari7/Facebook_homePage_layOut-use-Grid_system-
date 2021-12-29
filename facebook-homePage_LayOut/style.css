@@ -1,0 +1,535 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+.containerBox {
+  background-color: #edf4f5;
+  /* height: 100vh; */
+}
+.wraper {
+  display: grid;
+  grid-template-columns: 300px 1fr 290px;
+  grid-template-rows: 1fr;
+  height: 100vh;
+  /* width: 100vw; */
+}
+/*********=========  Start Navigation  ========*********/
+/* is used for fixed the navigation bar */
+/* .navContainer {
+  display: flex;
+  position: fixed;
+} */
+
+/* Start navigation Display Button */
+.checkBtn {
+  font-size: 30px;
+  line-height: 0px;
+  margin-top: 10px;
+}
+#check {
+  display: none;
+}
+.checkBtn {
+  display: none;
+}
+/* End navigation Display Button */
+
+#navigation {
+  grid-column: 1/-1;
+  background: white;
+  box-shadow: 8px 0px 8px silver;
+  display: flex;
+}
+#logo {
+  margin-top: 10px;
+  border-radius: 2rem;
+  margin-right: -4rem;
+}
+.logo {
+  background: #fc035a;
+  margin-top: 5px;
+  margin-left: 1rem;
+  padding: 5px;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 2rem;
+  color: white;
+}
+/*********  Start Search  *********/
+#searchBar {
+  display: flex;
+  margin: 8px 0px 8px 4.2rem;
+}
+#searchBar i {
+  margin-top: 12px;
+  font-size: 18px;
+  color: darkgreen;
+  display: none;
+  cursor: pointer;
+}
+input {
+  text-align: center;
+  width: 14.7rem;
+  outline: none;
+  border: none;
+  background: #edf4f5;
+  border-radius: 2rem;
+  text-align: center;
+}
+/*********  End Search *********/
+
+/*********  Start left hand side navigation button  *********/
+#navLeftBtn {
+  display: flex;
+  margin-left: 5rem;
+}
+#navLeftBtn button {
+  font-size: 22px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border: none;
+  background: white;
+}
+.navBtn1 {
+  margin-right: 15px;
+}
+.navBtn2 {
+  margin-right: 15px;
+}
+.navBtn3 {
+  margin-right: 15px;
+}
+.navBtn4 {
+  margin-right: 15px;
+}
+.navBtn5 {
+  margin-right: 15px;
+}
+#navLeftBtn button:hover {
+  background: #edf4f5;
+  border-radius: 10px;
+}
+/*********  End left hand side navigation button  *********/
+
+/*********  Start right hand side navigation button  *********/
+#navRightBtn {
+  display: flex;
+  margin-left: auto;
+  margin-right: 12px;
+  margin-top: 13px;
+  margin-bottom: 4px;
+}
+#navRightBtn button {
+  line-height: 0%;
+  border-radius: 100%;
+  font-size: 19px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  margin: -4px 7px 3px 4px;
+  background: #d3dfe0;
+}
+#navRightSelectBox {
+  display: flex;
+  width: 20px;
+  background: none;
+  outline: none;
+  border: none;
+}
+#seeProfile {
+  font-size: 25px;
+}
+#navRightBtn button:hover {
+  background: #b7c6c7;
+}
+
+/*********  End Right hand side navigation button  *********/
+/*********==========  End Navigation  ==========*********/
+
+/*********==========  Start Menu  ============*********/
+#menu {
+  grid-row: 2/-1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  overflow-y: scroll;
+  /* height: 100vh; */
+}
+#menu::-webkit-scrollbar {
+  width: 7px;
+}
+#menu::-webkit-scrollbar-track {
+  background: #edf4f5;
+}
+#menu::-webkit-scrollbar-thumb {
+  background: rgba(179, 179, 179);
+  /* display: none; */
+}
+
+#menu button {
+  font-size: 17px;
+  font-family: sans-serif;
+  padding: 0.7rem;
+  margin-left: 0.8rem;
+  border: none;
+  outline: none;
+  background: #edf4f5;
+  flex-shrink: 0;
+  flex-flow: inherit;
+}
+#menu button i {
+  margin-right: 15px;
+}
+#menu button:hover {
+  background-color: #e1e6e6;
+  border-radius: 5px;
+}
+/*********============  End Menu  =============*********/
+
+/*********============  Start Section  ==============*********/
+#section {
+  grid-column: 2/3;
+  margin-top: 1.5rem;
+}
+/*********  Start Story Section  *********/
+.storySection {
+  display: flex;
+  margin-top: 5px;
+  margin-left: 5rem;
+  margin-right: 4.5rem;
+}
+.storySection img {
+  height: 200px;
+  width: 107px;
+  margin: 3px;
+  flex-direction: column;
+}
+.storySectionImage1 {
+  margin-right: 6px;
+  background: black;
+  border-radius: 10px;
+}
+.storySectionImage2 {
+  margin-right: 6px;
+  background: black;
+  border-radius: 10px;
+}
+.storySectionImage3 {
+  margin-right: 6px;
+  background: black;
+  border-radius: 10px;
+}
+.storySectionImage4 {
+  margin-right: 6px;
+  background: black;
+  border-radius: 10px;
+}
+.storySectionImage5 {
+  background: black;
+  border-radius: 10px;
+}
+/*********  End Story Section  *********/
+
+/*********  Start Main Card Section  *********/
+#card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.dpimage {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+.card-body span {
+  cursor: pointer;
+  font-family: sans-serif;
+}
+.card-body button {
+  outline: none;
+  border: none;
+  background: white;
+  margin-left: 3rem;
+  margin-right: 3.5rem;
+}
+.card-body button:hover {
+  background: #edf4f5;
+}
+.card li {
+  cursor: pointer;
+}
+/*********  End Main Card Section  *********/
+/*********============  End Section  ============*********/
+
+/*********============  Start AsideBar  ============*********/
+#asideBar {
+  grid-column: 3/-1;
+  /* height: 100%; */
+}
+/********* Start Sponcerdbar ***********/
+#sponsoredBarHeading {
+  margin-top: 2rem;
+  margin-bottom: 15px;
+  font-family: sans-serif;
+}
+#sponsoredBar img {
+  width: 120px;
+  height: 110px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.sponsoredBarImge:hover {
+  background: #e1e6e6;
+}
+.sponsoredBarImge2 {
+  margin-bottom: -17px;
+}
+.sponsName1 {
+  font-weight: bold;
+}
+.sponsName2 {
+  font-weight: bold;
+}
+/********* End Sponcerdbar ***********/
+
+/********* Start onlinefriend ***********/
+#onLineFriends {
+  display: flex;
+  flex-direction: column;
+  /* overflow: scroll; */
+}
+#onLineFriends img {
+  height: 30px;
+  width: 30px;
+  border-radius: 2rem;
+  margin: 7px;
+}
+#onLineFriends span {
+  position: absolute;
+  font-size: 50px;
+  color: green;
+}
+#onLineFriends a {
+  list-style: none;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 17px;
+  margin-left: 10px;
+}
+.onlineFrnd1:hover,
+.onlineFrnd2:hover,
+.onlineFrnd3:hover,
+.onlineFrnd4:hover,
+.onlineFrnd5:hover,
+.onlineFrnd6:hover,
+.onlineFrnd7:hover,
+.onlineFrnd8:hover,
+.onlineFrnd9:hover,
+.onlineFrnd10:hover,
+.onlineFrnd11:hover,
+.onlineFrnd12:hover,
+.onlineFrnd13:hover,
+.onlineFrnd14:hover,
+.onlineFrnd15:hover,
+.onlineFrnd16:hover,
+.onlineFrnd17:hover,
+.onlineFrnd18:hover,
+.onlineFrnd19:hover,
+.onlineFrnd20:hover {
+  background: #e1e6e6;
+  border-left-style: none;
+  border-radius: 10px;
+}
+/********** Start onlinefriend ***********/
+/*********============  End AsideBar  ============*********/
+
+/* ________________ MEDIA QUERY 1400px to 1350px_______________ */
+@media only screen and (max-width: 1400px) and (max-width: 1350px) {
+  .wraper {
+    grid-template-columns: 280px 1fr 280px;
+  }
+  input {
+    width: 14.5rem;
+  }
+  #navLeftBtn {
+    display: flex;
+    margin-left: 4.5rem;
+  }
+  .storySection img {
+    height: 195px;
+    width: 105px;
+    margin: 3px;
+    flex-direction: column;
+  }
+}
+
+/* ________________ MEDIA QUERY 1300px_______________ */
+@media only screen and (max-width: 1300px) {
+  .wraper {
+    grid-template-columns: 270px 1fr 270px;
+  }
+  #navLaftBtn {
+    margin-left: 4.1rem;
+  }
+  .storySection img {
+    height: 195px;
+    width: 105px;
+    margin: 3px;
+    flex-direction: column;
+  }
+}
+
+/* ________________ MEDIA QUERY 1250px_______________ */
+@media only screen and (max-width: 1250px) {
+  .wraper {
+    display: grid;
+    grid-template-columns: 270px 1fr 270px;
+    grid-template-rows: 55px 1fr;
+  }
+  input {
+    width: 14rem;
+  }
+  .storySection img {
+    height: 190px;
+    width: 96px;
+    margin: 3px;
+    flex-direction: column;
+  }
+  #navRightBtn {
+    margin-top: 5px;
+    margin-bottom: 3.5px;
+  }
+  #navRightBtn button {
+    margin: 0px 7px 3px 4px;
+  }
+}
+
+/* ________________ MEDIA QUERY 1200px_______________ */
+@media only screen and (max-width: 1200px) {
+  .wraper {
+    display: grid;
+    grid-template-columns: 60px 1fr 1frpx;
+    grid-template-rows: 55px 1fr;
+  }
+  input {
+    width: 4.4rem;
+  }
+  #searchBar i {
+    display: block;
+  }
+  .storySectionImage5 {
+    display: none;
+  }
+  .storySection img {
+    height: 180px;
+    width: 115px;
+    margin: 3px;
+    flex-direction: column;
+  }
+  #navRightBtn {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 13px;
+    margin-bottom: 4px;
+  }
+  #navRightBtn button {
+    line-height: 0%;
+    border-radius: 100%;
+    font-size: 19px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    margin: -4px 7px 3px 4px;
+    background: #d3dfe0;
+  }
+}
+
+/* ________________ MEDIA QUERY 1150px_______________ */
+@media only screen and (max-width: 1150px) {
+  .checkBtn {
+    display: block;
+    cursor: pointer;
+    margin-top: 4px;
+    margin-right: 15px;
+  }
+  .wraper {
+    display: grid;
+    grid-template-columns: 60px 1fr 1fr;
+    grid-template-rows: 55px 1fr;
+  }
+  input {
+    width: 4.4rem;
+  }
+  #searchBar i {
+    display: block;
+  }
+  .storySection img {
+    height: 180px;
+    width: 115px;
+    margin: 3px;
+    flex-direction: column;
+  }
+  #navRightBtn {
+    margin-top: 10px;
+    margin-bottom: 3px;
+  }
+  #navRightBtn button {
+    font-size: 19px;
+    padding: 10px;
+    margin: 0px 7px 5px 4px;
+  }
+  #menu {
+    display: none;
+  }
+}
+/* ________________ MEDIA QUERY 1100px_______________ */
+@media only screen and (max-width: 1100px) {
+  .checkBtn {
+    display: block;
+    cursor: pointer;
+  }
+  .wraper {
+    display: grid;
+    grid-template-columns: 60px 1fr 1fr;
+    grid-template-rows: 55px 1fr;
+  }
+  input {
+    width: 4.4rem;
+  }
+  #searchBar i {
+    display: block;
+  }
+  #navLeftBtn button {
+    padding-left: 45px;
+    padding-right: 30px;
+  }
+  .navBtn5 {
+    display: none;
+  }
+  #navRightBtn {
+    margin-left: auto;
+  }
+  #menu {
+    display: none;
+  }
+  .storySectionImage5 {
+    display: flex;
+  }
+  .storySection img {
+    height: 185px;
+    width: 105px;
+  }
+  .storySection {
+    display: flex;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 4.5rem;
+  }
+  #card {
+    margin-right: 5rem;
+  }
+}
+/* ________________ MEDIA QUERY 1100px_______________ */
